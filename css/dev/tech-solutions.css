@@ -249,6 +249,9 @@
   .item-offer__image-small {
     max-height: 15.625rem;
   }
+  .item-offer__image-small--height {
+    max-height: 34.375rem;
+  }
   .process__container {
     row-gap: 1.875rem;
   }
