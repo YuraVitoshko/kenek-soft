@@ -476,6 +476,7 @@ body {
   border-color: red;
 }
 .form__textarea {
+  border-radius: 0 !important;
   resize: vertical;
   border-bottom: 0.125rem solid #d9d9d9;
   width: 100% !important;

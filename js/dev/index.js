@@ -1,4 +1,4 @@
-import { d as dataMediaQueries, s as slideToggle, a as slideUp, b as bodyUnlock, g as gotoBlock, c as getHash } from "./app.min.js";
+import { d as dataMediaQueries, s as slideToggle, a as slideUp, b as bodyUnlock$1, g as gotoBlock, c as getHash } from "./app.min.js";
 import "./dynamic.min.js";
 function spollers() {
   const spollersArray = document.querySelectorAll("[data-fls-spollers]");
@@ -136,7 +136,7 @@ function pageNavigation() {
           if (fullpageSectionId !== null) {
             window.fullpage.switchingSection(fullpageSectionId);
             if (document.documentElement.hasAttribute("data-fls-menu-open")) {
-              bodyUnlock();
+              bodyUnlock$1();
               document.documentElement.removeAttribute("data-fls-menu-open");
             }
           }
@@ -192,6 +192,10 @@ document.querySelector("[data-fls-scrollto]") ? window.addEventListener("load", 
       if (target) {
         const top = target.getBoundingClientRect().top + window.scrollY - headerHeight;
         window.scrollTo({ top, behavior: "smooth" });
+        if (document.documentElement.hasAttribute("data-fls-menu-open")) {
+          bodyUnlock();
+          document.documentElement.removeAttribute("data-fls-menu-open");
+        }
       }
     } catch (error) {
       console.error("scrollToHash error:", error);
