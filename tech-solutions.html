@@ -5,10 +5,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Tech solutions</title>
-		<script type="module" crossorigin="" src="./js/app.min.js?v=1749578035726"></script>
-		<script type="module" crossorigin="" src="./js/dynamic.min.js?v=1749578035726"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1749578035726">
-		<link rel="stylesheet" crossorigin="" href="./css/tech-solutions.min.css?v=1749578035726">
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1749641139992"></script>
+		<script type="module" crossorigin="" src="./js/dynamic.min.js?v=1749641139992"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1749641139992">
+		<link rel="stylesheet" crossorigin="" href="./css/tech-solutions.min.css?v=1749641139992">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -29,10 +29,10 @@
 										<a href="index.html" class="menu__link">Main</a>
 									</li>
 									<li class="menu__item">
-										<a href="projects.html" class="menu__link">Projects</a>
+										<a href="our-projects.html" class="menu__link">Projects</a>
 									</li>
 									<li class="menu__item">
-										<a href="index.html/#services" class="menu__link">Services</a>
+										<a href="index.html#services" class="menu__link">Services</a>
 									</li>
 									<li class="menu__item">
 										<a href="tech-solutions.html" class="menu__link">About</a>
@@ -79,7 +79,6 @@
 						</div>
 						<div data-fls-dynamic=".tech-solutions-hero__container, 768" class="tech-solutions-hero__image">
 							<picture>
-								<source media="(max-width: 600px)" srcset="./assets/img/tech-solutions/hero-600.webp" type="image/webp">
 								<source media="(max-width: 1200px)" srcset="./assets/img/tech-solutions/hero-1200.webp" type="image/webp">
 								<img alt="Image" src="./assets/img/tech-solutions/hero.webp">
 							</picture>
@@ -131,12 +130,12 @@
 									</div>
 								</div>
 								<div class="item-offer__media item-offer__media--two-img">
-									<div class="item-offer__image">
+									<div class="item-offer__image item-offer__image--height">
 										<picture>
 											<img alt="Image" src="./assets/img/tech-solutions/04.webp">
 										</picture>
 									</div>
-									<div class="item-offer__image">
+									<div class="item-offer__image item-offer__image--height">
 										<picture>
 											<img alt="Image" src="./assets/img/tech-solutions/05.webp">
 										</picture>
@@ -159,18 +158,24 @@
 											<img alt="Image" src="./assets/img/tech-solutions/06.webp">
 										</picture>
 									</div>
-									<div class="item-offer__image-small">
-										<picture>
-											<img alt="Image" src="./assets/img/tech-solutions/001.webp">
-										</picture>
-										<picture>
-											<img alt="Image" src="./assets/img/tech-solutions/002.webp">
-										</picture>
-										<picture>
-											<img alt="Image" src="./assets/img/tech-solutions/003.webp">
-										</picture>
+									<div class="item-offer__box-img">
+										<div class="item-offer__image-small">
+											<picture>
+												<img alt="Image" src="./assets/img/tech-solutions/001.webp">
+											</picture>
+										</div>
+										<div class="item-offer__image-small">
+											<picture>
+												<img alt="Image" src="./assets/img/tech-solutions/002.webp">
+											</picture>
+										</div>
+										<div class="item-offer__image-small">
+											<picture>
+												<img alt="Image" src="./assets/img/tech-solutions/003.webp">
+											</picture>
+										</div>
 									</div>
-									<div class="item-offer__image">
+									<div class="item-offer__image item-offer__image--none">
 										<picture>
 											<img alt="Image" src="./assets/img/tech-solutions/08.webp">
 										</picture>
@@ -257,7 +262,7 @@
 								<span>US</span>
 								?
 							</h2>
-							<a data-fls-dynamic=".why-should__container, 768, 2" href="index.html/#services" data-fls-button="" class="why-should__button button--arrow">See all our services</a>
+							<a data-fls-dynamic=".why-should__container, 768, 2" href="index.html#services" data-fls-button="" class="why-should__button button--arrow">See all our services</a>
 						</div>
 						<div class="why-should__body">
 							<div class="why-should__medium-text">
@@ -283,11 +288,10 @@
 						<h2 class="contacts__title">TELL US ABOUT IT</h2>
 					</div>
 					<form action="send.php" method="POST" class="contacts__form form">
-						<!-- <form class="contacts__form form"> -->
 						<div class="form__box">
 							<div class="form__line">
 								<span class="form__label">Name</span>
-								<input type="text" name="text" placeholder="Name" class="form__input input">
+								<input type="text" name="name" placeholder="Name" class="form__input input">
 							</div>
 							<div class="form__line">
 								<span class="form__label">Your Email</span>
@@ -344,7 +348,7 @@
 						</div>
 						<div class="form__line form__line--gap">
 							<span class="form__label">Tell us more about your project</span>
-							<textarea name="text" class="form__textarea" maxlength="500" placeholder="Something about your great idea"></textarea>
+							<textarea name="message" class="form__textarea" maxlength="500" placeholder="Something about your great idea"></textarea>
 						</div>
 						<button data-fls-button="" type="submit" class="form__button button-blue">Submit the Request</button>
 					</form>

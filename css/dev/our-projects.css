@@ -51,6 +51,8 @@
   color: #797979;
 }
 .item-projects__media {
+  border-radius: 1.375rem;
+  overflow: hidden;
   flex: 1 1 50%;
   width: 100%;
   display: grid;

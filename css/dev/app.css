@@ -386,7 +386,10 @@ body {
   background-size: contain;
 }
 .button--size {
-  padding: 0.125rem 0.8125rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.125rem 0.8125rem !important;
 }
 .button--arrow {
   display: flex;
@@ -628,10 +631,10 @@ textarea {
 }
 @media (min-width: 26.875em) and (max-width: 81.875em){
   .button--size::before {
-    width: clamp( 0.75rem , -0.19673295454375rem  +  3.5227272727vw , 2.6875rem );
+    width: clamp( 0.75rem , -0.16619318181875rem  +  3.4090909091vw , 2.625rem );
   }
   .button--size::before {
-    height: clamp( 0.75rem , -0.19673295454375rem  +  3.5227272727vw , 2.6875rem );
+    height: clamp( 0.75rem , -0.16619318181875rem  +  3.4090909091vw , 2.625rem );
   }
   .contacts {
     padding-top: clamp( 3.75rem , 1.45951704545625rem  +  8.5227272727vw , 8.4375rem );
@@ -693,10 +696,10 @@ textarea {
     font-size: 11.25rem;
   }
   .button--size::before {
-    width: 2.6875rem;
+    width: 2.625rem;
   }
   .button--size::before {
-    height: 2.6875rem;
+    height: 2.625rem;
   }
   .contacts {
     padding-top: 8.4375rem;

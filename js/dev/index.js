@@ -181,14 +181,38 @@ function pageNavigation() {
   }
 }
 document.querySelector("[data-fls-scrollto]") ? window.addEventListener("load", pageNavigation) : null;
-window.addEventListener("load", function() {
-  const headerHeight = document.querySelector("header").offsetHeight;
-  const hash = window.location.hash;
-  if (hash) {
-    const target = document.querySelector(hash);
-    if (target) {
-      const top = target.getBoundingClientRect().top + window.scrollY - headerHeight;
-      window.scrollTo({ top, behavior: "smooth" });
+(function() {
+  function scrollToHash() {
+    const hash = window.location.hash;
+    if (!hash) return;
+    try {
+      const header = document.querySelector("header");
+      const headerHeight = header ? header.offsetHeight : 0;
+      const target = document.querySelector(hash);
+      if (target) {
+        const top = target.getBoundingClientRect().top + window.scrollY - headerHeight;
+        window.scrollTo({ top, behavior: "smooth" });
+      }
+    } catch (error) {
+      console.error("scrollToHash error:", error);
     }
   }
-});
+  window.addEventListener("load", scrollToHash);
+  window.addEventListener("hashchange", scrollToHash);
+  document.querySelectorAll('a[href*="#"]').forEach((link) => {
+    link.addEventListener("click", function(e) {
+      const hash = this.hash;
+      if (!hash || hash === "#") return;
+      const target = document.querySelector(hash);
+      if (target) {
+        e.preventDefault();
+        try {
+          history.pushState(null, null, hash);
+          scrollToHash();
+        } catch (error) {
+          console.error("Smooth scroll error:", error);
+        }
+      }
+    });
+  });
+})();

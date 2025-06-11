@@ -5,9 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Our projects</title>
-		<script type="module" crossorigin="" src="./js/app.min.js?v=1749578035726"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1749578035726">
-		<link rel="stylesheet" crossorigin="" href="./css/our-projects.min.css?v=1749578035726">
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1749641139992"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1749641139992">
+		<link rel="stylesheet" crossorigin="" href="./css/our-projects.min.css?v=1749641139992">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -29,7 +29,7 @@
 										<a href="projects.html" class="menu__link">Projects</a>
 									</li>
 									<li class="menu__item">
-										<a href="index.html/#services" class="menu__link">Services</a>
+										<a href="index.html#services" class="menu__link">Services</a>
 									</li>
 									<li class="menu__item">
 										<a href="tech-solutions.html" class="menu__link">About</a>
@@ -111,7 +111,6 @@
 							</div>
 							<div class="item-projects__media">
 								<picture>
-									<source media="(max-width: 600px)" srcset="./assets/img/projects/02-600.webp" type="image/webp">
 									<img alt="Image" src="./assets/img/projects/02.webp">
 								</picture>
 							</div>
@@ -192,11 +191,10 @@
 						<h2 class="contacts__title">TELL US ABOUT IT</h2>
 					</div>
 					<form action="send.php" method="POST" class="contacts__form form">
-						<!-- <form class="contacts__form form"> -->
 						<div class="form__box">
 							<div class="form__line">
 								<span class="form__label">Name</span>
-								<input type="text" name="text" placeholder="Name" class="form__input input">
+								<input type="text" name="name" placeholder="Name" class="form__input input">
 							</div>
 							<div class="form__line">
 								<span class="form__label">Your Email</span>
@@ -253,7 +251,7 @@
 						</div>
 						<div class="form__line form__line--gap">
 							<span class="form__label">Tell us more about your project</span>
-							<textarea name="text" class="form__textarea" maxlength="500" placeholder="Something about your great idea"></textarea>
+							<textarea name="message" class="form__textarea" maxlength="500" placeholder="Something about your great idea"></textarea>
 						</div>
 						<button data-fls-button="" type="submit" class="form__button button-blue">Submit the Request</button>
 					</form>

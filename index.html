@@ -5,11 +5,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>KeneK soft</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1749578035725"></script>
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1749641139991"></script>
 		<link rel="modulepreload" crossorigin="" href="./js/app.min.js">
 		<link rel="modulepreload" crossorigin="" href="./js/dynamic.min.js">
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1749578035725">
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1749578035725">
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1749641139991">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1749641139991">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -30,10 +30,10 @@
 										<a href="index.html" class="menu__link">Main</a>
 									</li>
 									<li class="menu__item">
-										<a href="projects.html" class="menu__link">Projects</a>
+										<a href="our-projects.html" class="menu__link">Projects</a>
 									</li>
 									<li class="menu__item">
-										<a href="index.html/#services" class="menu__link">Services</a>
+										<a href="index.html#services" class="menu__link">Services</a>
 									</li>
 									<li class="menu__item">
 										<a href="tech-solutions.html" class="menu__link">About</a>
@@ -83,7 +83,7 @@
 						creating seamless experiences that fuel growth and innovation
 									</p>
 								</div>
-								<a href="#" data-fls-scrollto=".contacts" data-fls-scrollto-header="" class="hero__btn button"></a>
+								<a href="#" data-fls-scrollto=".contacts__titles" data-fls-scrollto-header="" class="hero__btn button"></a>
 							</div>
 						</div>
 						<div data-fls-dynamic=".hero__container, 768" class="hero__media">
@@ -236,11 +236,10 @@
 						<h2 class="contacts__title">TELL US ABOUT IT</h2>
 					</div>
 					<form action="send.php" method="POST" class="contacts__form form">
-						<!-- <form class="contacts__form form"> -->
 						<div class="form__box">
 							<div class="form__line">
 								<span class="form__label">Name</span>
-								<input type="text" name="text" placeholder="Name" class="form__input input">
+								<input type="text" name="name" placeholder="Name" class="form__input input">
 							</div>
 							<div class="form__line">
 								<span class="form__label">Your Email</span>
@@ -297,7 +296,7 @@
 						</div>
 						<div class="form__line form__line--gap">
 							<span class="form__label">Tell us more about your project</span>
-							<textarea name="text" class="form__textarea" maxlength="500" placeholder="Something about your great idea"></textarea>
+							<textarea name="message" class="form__textarea" maxlength="500" placeholder="Something about your great idea"></textarea>
 						</div>
 						<button data-fls-button="" type="submit" class="form__button button-blue">Submit the Request</button>
 					</form>
