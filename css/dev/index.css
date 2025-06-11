@@ -203,7 +203,7 @@
     transform: translate(0, -0.9375rem) rotate(90deg);
   }
   .hero {
-    padding-top: 1.875rem;
+    padding-top: 7.25rem;
   }
   .hero__container {
     padding-left: 0;
@@ -425,7 +425,7 @@
 }
 @media (min-width: 47.99875em) and (max-width: 81.875em) {
   .hero {
-    padding-top: clamp( 1.875rem , -8.30886083539375rem  +  21.2169292646vw , 9.0625rem );
+    padding-top: clamp( 7.25rem , 4.68189596325rem  +  5.3503560754vw , 9.0625rem );
   }
   .hero__top {
     padding-left: clamp( 1.5625rem , -1.9797124644875rem  +  7.3798014833vw , 4.0625rem );
